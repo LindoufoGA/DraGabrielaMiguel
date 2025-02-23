@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Clínica de Harmonização Facial especializada em procedimentos estéticos naturais. Tratamentos personalizados com Dra. Gabriela Miguel Martins em São Paulo.">
+  <meta name="keywords" content="harmonização facial, estética, botox, preenchimento, rejuvenescimento, São Paulo">
+  <meta name="author" content="Dra. Gabriela Miguel Martins">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Clínica Dra. Gabriela Miguel - Harmonização Facial Natural">
+  <meta property="og:description" content="Tratamentos estéticos personalizados para realçar sua beleza natural.">
+  <meta property="og:image" content="/img/logo.png">
+  <meta property="og:url" content="https://seusite.com.br">
+
+  <title>Clínica Dra. Gabriela Miguel | Harmonização Facial Natural</title>
+
+  <!-- Preload de recursos críticos -->
+  <link rel="preload" href="/fonts/Poppins-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" as="image" href="img/logo.png">
+  <link rel="preload" href="styles.css" as="style">
+  <link rel="preload" href="main.js" as="script">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Adicione esse script inline para melhor performance -->
+  <script>
+    // Detecta quando as fontes estão carregadas
+    document.fonts.ready.then(() => {
+      document.documentElement.classList.add('fonts-loaded');
+    });
+  </script>
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="preloader-content">
+      <img src="/img/logo.png" alt="Logo Dra. Gabriela Miguel" class="preloader-logo">
+      <div class="loader"></div>
+      <span class="loading-text">CARREGANDO...</span>
+    </div>
+  </div>
+
+  <nav class="navbar">
+    <div class="logo">
+      <img src="/img/logo.png" alt="Logo Dra. Gabriela Miguel" class="logo-img">
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#resultados">Resultados</a></li>
+      <li>
+        <button class="nav-cta" onclick="window.open('https://wa.me/5511917369210', '_blank')">
+          Agende uma avaliação
+        </button>
+      </li>
+    </ul>
+    <button class="menu-mobile">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-background"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <span class="highlight-text">Clínica de Harmonização</span>
+        <h1>Beleza natural com<br>Resultados duradouros</h1>
+        <p>Clínica de estética avançada com tratamentos personalizados que aumentam a sua autoestima sem exageros.</p>
+        <div class="cta-buttons">
+          <button class="cta-button" onclick="window.open('https://wa.me/5511917369210', '_blank')">
+            <span class="button-shine"></span>
+            Agende sua consulta
+          </button>
+          <a href="https://wa.me/5511917369210" target="_blank" class="whatsapp-button">
+            Fale conosco
+          </a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="image-wrapper">
+          <img data-src="img/img-dra.png" alt="Dra. Nome" class="dra-img lazy">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="home" class="section transformation">
+    <div class="transformation-container">
+      <div class="transformation-image">
+        <img data-src="img/15.jpg" alt="Transformação Natural" class="feature-image lazy">
+        <div class="image-overlay"></div>
+      </div>
+      <div class="transformation-content">
+        <span class="highlight-tag">Transformação Natural</span>
+        <h2>Desperte sua beleza natural com harmonia e sutileza</h2>
+        <p class="lead-text">Você merece se sentir confiante e radiante em cada momento da sua vida.</p>
+
+        <div class="concerns-list">
+          <div class="concern-item animate-on-scroll">
+            <h3>Realce Labial Personalizado</h3>
+            <p>Transforme seu sorriso com volume e contorno naturais, mantendo a harmonia única dos seus lábios. Procedimentos customizados que respeitam suas características.</p>
+          </div>
+
+          <div class="concern-item animate-on-scroll">
+            <h3>Rejuvenescimento Facial Inteligente</h3>
+            <p>Suavize linhas de expressão e recupere a jovialidade da sua pele com técnicas avançadas que preservam suas expressões naturais.</p>
+          </div>
+
+          <div class="concern-item animate-on-scroll">
+            <h3>Revitalização da Firmeza</h3>
+            <p>Estimule naturalmente o colágeno da sua pele, devolvendo elasticidade e firmeza com bioestimuladores de última geração.</p>
+          </div>
+        </div>
+
+        <div class="treatment-info">
+          <h3>Tecnologia e Naturalidade</h3>
+          <p>Através de uma combinação exclusiva de procedimentos minimamente invasivos, como bioestimuladores de colágeno, ácido hialurônico e toxina botulínica, desenvolvemos protocolos personalizados que realçam sua beleza natural.</p>
+          <p class="emphasis-text">Resultados extraordinários sem aparência artificial: esse é o nosso compromisso com sua beleza.</p>
+        </div>
+
+        <div class="cta-section">
+          <button class="cta-button" onclick="window.open('https://wa.me/5511917369210', '_blank')">
+            <span class="button-shine"></span>
+            Agende sua avaliação personalizada
+          </button>
+          <p class="cta-note">Descubra como realçar sua beleza natural com segurança e precisão.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicos" class="section services">
+    <div class="services-intro">
+      <span class="highlight-tag">TRATAMENTOS</span>
+      <h2>Cada pele tem necessidades únicas</h2>
+      <p class="services-description">Por isso, oferecemos tratamentos estéticos personalizados para ajudar você a alcançar resultados naturais e duradouros, com foco no rejuvenescimento, na firmeza e na beleza da sua pele.</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card animate-on-scroll">
+        <div class="service-image">
+          <img data-src="img/laser.png" alt="Laser Lavieen" class="lazy">
+        </div>
+        <h3>Laser Lavieen</h3>
+        <p>Tecnologia avançada para rejuvenescimento e tratamento da pele</p>
+      </div>
+
+      <div class="service-card animate-on-scroll">
+        <div class="service-image">
+          <img data-src="img/fios.png" alt="Fios de PDO" class="lazy">
+        </div>
+        <h3>Fios de PDO</h3>
+        <p>Lifting não cirúrgico para firmeza e sustentação natural</p>
+      </div>
+
+      <div class="service-card animate-on-scroll">
+        <div class="service-image">
+          <img data-src="img/colageno.png" alt="Bioestimulador de Colágeno" class="lazy">
+        </div>
+        <h3>Bioestimulador de Colágeno</h3>
+        <p>Estimulação natural para maior firmeza e jovialidade</p>
+      </div>
+
+      <div class="service-card animate-on-scroll">
+        <div class="service-image">
+          <img data-src="img/botox.jpg" alt="Botox" class="lazy">
+        </div>
+        <h3>Botox</h3>
+        <p>Suavização de linhas de expressão com resultados naturais</p>
+      </div>
+
+      <div class="service-card animate-on-scroll">
+        <div class="service-image">
+          <img data-src="img/preenchimento.png" alt="Preenchimento Labial" class="lazy">
+        </div>
+        <h3>Preenchimento Labial</h3>
+        <p>Volume e contorno harmonioso para seus lábios</p>
+      </div>
+
+      <div class="service-card animate-on-scroll">
+        <div class="service-image">
+          <img data-src="img/harmonizacao.png" alt="Harmonização Facial" class="lazy">
+        </div>
+        <h3>Harmonização Facial</h3>
+        <p>Equilíbrio e simetria personalizada para seu rosto</p>
+      </div>
+
+      <div class="service-card animate-on-scroll">
+        <div class="service-image">
+          <img data-src="img/ultra.png" alt="Ultraformer" class="lazy">
+        </div>
+        <h3>Ultraformer</h3>
+        <p>Ultrassom focado para lifting e firmeza da pele</p>
+      </div>
+
+      <div class="service-card animate-on-scroll">
+        <div class="service-image">
+          <img data-src="img/micro.png" alt="Microagulhamento Facial" class="lazy">
+        </div>
+        <h3>Microagulhamento Facial</h3>
+        <p>Renovação e estímulo natural da pele</p>
+      </div>
+
+      <div class="service-card animate-on-scroll">
+        <div class="service-image">
+          <img data-src="img/prp.png" alt="PRP" class="lazy">
+        </div>
+        <h3>PRP</h3>
+        <p>Tratamento com plasma rico em plaquetas para rejuvenescimento</p>
+      </div>
+    </div>
+
+    <div class="services-cta">
+      <p>Agende uma consulta personalizada e descubra o melhor tratamento para você</p>
+      <button class="cta-button" onclick="window.open('https://wa.me/5511917369210', '_blank')">
+        <span class="button-shine"></span>
+        Agende sua avaliação
+      </button>
+    </div>
+  </section>
+
+  <section id="sobre" class="section about">
+    <div class="about-container">
+      <div class="about-image">
+        <img data-src="img/quemsou.jpg" alt="Dra. Gabriela Miguel Martins" class="doctor-image lazy">
+        <div class="experience-tag">
+          <span>+5 anos de experiência</span>
+        </div>
+      </div>
+
+      <div class="about-content">
+        <span class="highlight-tag">Sobre mim</span>
+        <h2>Dra. Gabriela Miguel Martins</h2>
+        <p class="quote">"Meu trabalho é realçar a sua beleza natural, respeitando cada detalhe e necessidade da sua pele."</p>
+
+        <div class="about-text">
+          <p class="intro">Olá! Sou a Dra. Gabi, especialista em harmonização facial e apaixonada por realçar a beleza única de cada pessoa.</p>
+
+          <div class="credentials">
+            <h3>Formação e Especialização</h3>
+            <ul>
+              <li>Farmacêutica formada pela UNIFESP</li>
+              <li>Pós-graduada em Farmácia Estética</li>
+              <li>Especialista em Harmonização Facial pela Uneed Health</li>
+            </ul>
+          </div>
+
+          <div class="philosophy">
+            <p>Minha filosofia é simples: cada rosto conta uma história única, e meu papel é valorizar essa narrativa. Trabalho com técnicas avançadas e personalizadas, sempre priorizando resultados naturais que elevam sua autoestima e preservam sua essência.</p>
+
+            <p>Acredito que a verdadeira beleza está no equilíbrio. Por isso, desenvolvo protocolos individualizados que respeitam suas características naturais, garantindo resultados harmoniosos e duradouros.</p>
+          </div>
+
+          <div class="personal-touch">
+            <p>Aqui, você encontra mais que procedimentos estéticos – encontra um cuidado personalizado e acolhedor. Cada tratamento é pensado com dedicação, como se fosse para alguém da minha família.</p>
+          </div>
+        </div>
+
+        <div class="about-cta">
+          <button class="cta-button" onclick="window.open('https://wa.me/5511917369210', '_blank')">
+            <span class="button-shine"></span>
+            Agende sua consulta
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="resultados" class="section gallery">
+    <div class="gallery-intro">
+      <span class="highlight-tag">Resultados Reais</span>
+      <h2>Transformações Naturais</h2>
+      <p class="gallery-description">Conheça os resultados dos nossos tratamentos através das histórias reais de transformação dos nossos pacientes.</p>
+    </div>
+
+    <div class="gallery-container">
+      <div class="before-after-card animate-on-scroll">
+        <div class="side-by-side-comparison">
+          <img data-src="img/1.jpg" alt="Antes e Depois do tratamento" class="comparison-image lazy">
+        </div>
+      </div>
+
+      <div class="before-after-card animate-on-scroll">
+        <div class="side-by-side-comparison">
+          <img data-src="img/7.png" alt="Antes e Depois do tratamento" class="comparison-image lazy">
+        </div>
+      </div>
+
+      <div class="before-after-card animate-on-scroll">
+        <div class="side-by-side-comparison">
+          <img data-src="img/10.png" alt="Antes e Depois do tratamento" class="comparison-image lazy">
+        </div>
+      </div>
+
+      <div class="before-after-card animate-on-scroll">
+        <div class="side-by-side-comparison">
+          <img data-src="img/12.png" alt="Antes e Depois do tratamento" class="comparison-image lazy">
+        </div>
+      </div>
+
+      <div class="before-after-card animate-on-scroll">
+        <div class="side-by-side-comparison">
+          <img data-src="img/13.png" alt="Antes e Depois do tratamento" class="comparison-image lazy">
+        </div>
+      </div>
+
+      <div class="before-after-card animate-on-scroll">
+        <div class="side-by-side-comparison">
+          <img data-src="img/14.png" alt="Antes e Depois do tratamento" class="comparison-image lazy">
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-cta">
+      <p>Transforme sua beleza natural com segurança e profissionalismo</p>
+      <button class="cta-button" onclick="window.open('https://wa.me/5511917369210', '_blank')">
+        <span class="button-shine"></span>
+        Agende sua avaliação
+      </button>
+    </div>
+  </section>
+
+  <section id="faq" class="section faq">
+    <div class="faq-container">
+      <div class="faq-intro">
+        <span class="highlight-tag">Dúvidas Frequentes</span>
+        <h2>Tire suas dúvidas</h2>
+        <p class="faq-description">Encontre respostas para as perguntas mais comuns sobre nossos procedimentos</p>
+      </div>
+
+      <div class="faq-grid">
+        <div class="faq-item animate-on-scroll">
+          <div class="faq-question">
+            <h3>Os procedimentos são dolorosos?</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>A maioria dos procedimentos é realizada com anestésicos tópicos ou locais, o que minimiza o desconforto. Cada pessoa tem uma sensibilidade diferente, mas buscamos tornar a experiência o mais confortável possível.</p>
+          </div>
+        </div>
+
+        <div class="faq-item animate-on-scroll">
+          <div class="faq-question">
+            <h3>Quanto tempo dura o resultado dos procedimentos?</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Depende do tipo de procedimento realizado. Por exemplo, toxina botulínica (botox) costuma durar de 4 a 6 meses, enquanto preenchimentos podem durar de 9 a 18 meses.</p>
+          </div>
+        </div>
+
+        <div class="faq-item animate-on-scroll">
+          <div class="faq-question">
+            <h3>É necessário fazer uma avaliação antes do procedimento?</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Sim. A avaliação é fundamental para entender suas necessidades, analisar seu histórico de saúde e planejar o procedimento mais adequado para você.</p>
+          </div>
+        </div>
+
+        <div class="faq-item animate-on-scroll">
+          <div class="faq-question">
+            <h3>Os resultados são imediatos?</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Alguns procedimentos têm resultados visíveis imediatamente, como preenchimentos, enquanto outros, como o botox, podem levar alguns dias para atingir o efeito desejado.</p>
+          </div>
+        </div>
+
+        <div class="faq-item animate-on-scroll">
+          <div class="faq-question">
+            <h3>Há contraindicações?</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Sim, cada procedimento tem suas contraindicações, como gravidez, amamentação, alergias a determinados produtos ou condições de saúde específicas.</p>
+          </div>
+        </div>
+
+        <div class="faq-item animate-on-scroll">
+          <div class="faq-question">
+            <h3>Quais são os riscos dos procedimentos estéticos?</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Quando realizados por profissionais qualificados, os riscos são mínimos. Entretanto, complicações como hematomas, inchaços ou reações alérgicas podem ocorrer em casos raros.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section final-cta">
+    <div class="final-cta-container">
+      <h2>Transforme sua beleza com segurança e naturalidade</h2>
+      <p>Tratamento estético avançado e personalizado para trazer de volta a firmeza, juventude e beleza natural da sua pele, com elegância e sem exageros.</p>
+      <button class="cta-button" onclick="window.open('https://wa.me/5511917369210', '_blank')">
+        <span class="button-shine"></span>
+        Agende sua avaliação
+      </button>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="/img/logo.png" alt="Logo Dra. Gabriela Miguel" class="footer-logo-img">
+      </div>
+
+      <div class="footer-content">
+        <div class="footer-contact">
+          <h3>Contato</h3>
+          <a href="https://wa.me/5511917369210" target="_blank" class="footer-phone">
+            (11) 91234-5678
+          </a>
+        </div>
+
+        <div class="footer-address">
+          <h3>Endereço</h3>
+          <p>Rua Joaquim Floriano, 413 - 9º andar<br>
+            Itaim Bibi. São Paulo/SP - 04534-011</p>
+        </div>
+
+        <div class="footer-hours">
+          <h3>Horário de Funcionamento</h3>
+          <p>Segunda a Sexta: 08:00 às 21:00</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 Dra. Gabriela Miguel. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
